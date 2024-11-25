@@ -33,8 +33,8 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<WarningLevel>1</WarningLevel>
 		<DefineConstants>TRACE</DefineConstants>
-		<Optimize>true</Optimize>
-		<DocumentationFile>FaceONNX.Addons.xml</DocumentationFile>
+		<!--<Optimize>true</Optimize>-->
+		<DocumentationFile>$(MSBuildProjectName).xml</DocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -70,7 +70,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="FaceONNX" Version="4.0.3.1" />
+	  <ProjectReference Include="..\FaceONNX\FaceONNX.csproj" />
 	</ItemGroup>
 
 </Project>
